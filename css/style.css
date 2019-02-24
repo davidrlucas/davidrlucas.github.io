@@ -1,0 +1,129 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+	margin-top: 50px;
+}
+
+.cal {
+	width: 350px; 
+	height: 480px; 
+	padding: 10px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+	justify-content: center;
+    align-items: center;
+	
+	margin-top: 30px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.own-img-thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+	border: 5px solid #fff;
+    border-radius: 15px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+	flex: 50%;
+	max-width: 50%;
+  }
+  .header {
+    background: url(../img/bg.jpg) no-repeat center center scroll; 
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+	flex: 100%;
+	max-width: 100%;
+  }
+}
+
+.header {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url(../img/praia_1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.vert-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.vert-text h1 {
+  font-family: 'Lobster', cursive;
+  padding: 0;
+  margin: 0;
+  font-size: 4.5em;
+  font-weight: 700;
+  text-shadow: 2px 2px rgba(156, 190, 200, 1);
+}
+
+h1.header-text {
+  font-family: 'Lobster', cursive;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+  margin-top: 140px;
+  color: white;
+  font-size: 73px;
+  font-weight: bold;
+}
+h3.header-text {
+  color: #EC7787;
+}
+
+.space{
+  margin-top: 70px;
+}
+
+.main-title{
+  font-family: 'Lobster', cursive;
+  font-size: 45px;
+}
+
+em.header-text {
+	padding: 9px 20px;
+	position: relative;
+	top: 6px;
+	color: rgb(223, 88, 137);
+	border-radius: 4px;
+}
+
+.fc-basic-view .fc-body .fc-row {
+    min-height: 1em !important;
+}

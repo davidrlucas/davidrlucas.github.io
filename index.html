@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+	  
+      <title>Casa em Altura</title>
+	  
+	   <link href="css/style.css" rel="stylesheet">
+       <link href="css/bootstrap.css" rel="stylesheet">
+	   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+       <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+       <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	   
+	   <script src='js/jquery.min.js'></script>
+	   <script src='js/moment.min.js'></script>
+	   
+	   <script src="js/bootstrap.js"></script>
+       <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+	   
+	   <link rel='stylesheet' href='js/fullcalendar-3.10.0/fullcalendar.css' />
+	   <script src='js/fullcalendar-3.10.0/fullcalendar.js'></script>
+	   <script src='js/fullcalendar-3.10.0/locale/pt.js'></script>
+	   <script type='text/javascript' src='js/fullcalendar-3.10.0/gcal.js'></script>
+   </head>
+   <body>
+		<div class="header">
+			<div class="vert-text parallax">
+				<h1 class="header-text">Casa em Altura</h1>
+				</br>
+				<a href="#photos"><img src="img/direction_white.png" class="space" alt="Direction"></a>
+			</div>
+		</div>
+	
+		<div class="container">
+			<div class="row" id="photos"> 
+				<div class="column">
+					<img class="own-img-thumbnail" src="photos/main_room_1.jpeg">
+					<img class="own-img-thumbnail" src="photos/main_room_2.jpeg">
+					<img class="own-img-thumbnail" src="photos/second_room_1.jpeg">
+					<img class="own-img-thumbnail" src="photos/backroom_1.jpeg">
+				</div>
+				<div class="column">
+					<img class="own-img-thumbnail "src="photos/living_room_1.jpeg">
+					<img class="own-img-thumbnail "src="photos/living_room_2.jpeg">
+					<img class="own-img-thumbnail "src="photos/kitchen_1.jpeg">
+					<img class="own-img-thumbnail "src="photos/backroom_2.jpeg">
+				</div> 
+				<div class="column">
+					<img class="own-img-thumbnail" src="photos/hallway_1.jpeg">
+					<img class="own-img-thumbnail" src="photos/bathroom_1.jpeg">
+					<img class="own-img-thumbnail" src="photos/bathroom_2.jpeg">
+					<img class="own-img-thumbnail" src="photos/outside_1.jpeg">
+					<img class="own-img-thumbnail" src="photos/beach_1.jpeg">
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div id="calendarJan" class="cal"></div>
+				<div id="calendarFev" class="cal"></div>
+				<div id="calendarMar" class="cal"></div>
+			</div>
+			<div class="row">
+				<div id="calendarAbr" class="cal"></div>
+				<div id="calendarMai" class="cal"></div>
+				<div id="calendarJun" class="cal"></div>
+			</div>
+			<div class="row">
+				<div id="calendarJul" class="cal"></div>
+				<div id="calendarAgo" class="cal"></div>
+				<div id="calendarSet" class="cal"></div>
+			</div>
+			<div class="row">
+				<div id="calendarOut" class="cal"></div>
+				<div id="calendarNov" class="cal"></div>
+				<div id="calendarDez" class="cal"></div>
+			</div>
+		</div>
+   </body>
+
+   <script>
+		$(document).ready(function () {
+		 $(window).resize(function () {
+			 if ($(window).width() > 990) {
+				$("img").addClass("own-img-thumbnail");
+			 } else {
+				 $('.own-img-thumbnail').off('mouseenter.large mouseleave.large');
+				 $(".own-img-thumbnail").removeClass("own-img-thumbnail");
+			 }
+		 }).resize(); //to initialize the value
+		});
+		
+		 // Calendars
+		 $('#calendarJan').fullCalendar({
+		  header: {
+		 	left:   '',
+		 	center: 'title',
+		 	right:  ' '
+		  },
+		  googleCalendarApiKey: 'AIzaSyB-fudNpQpgXuARz-D67Mtlw2Vvz371axc',
+		  events: {
+			googleCalendarId: 'casaemaltura@gmail.com'
+		  },
+		  eventBackgroundColor: '#e52929',
+		  showNonCurrentDates: false,
+          defaultDate: "2019-01-01",
+		  aspectRatio: 1
+		 });
+		 
+		$('#calendarFev').fullCalendar({
+		  header: {
+		 	left:   '',
+		 	center: 'title',
+		 	right:  ' '
+		  },
+		  googleCalendarApiKey: 'AIzaSyB-fudNpQpgXuARz-D67Mtlw2Vvz371axc',
+		  events: {
+			googleCalendarId: 'casaemaltura@gmail.com'
+		  },
+		  eventBackgroundColor: '#e52929',
+		  showNonCurrentDates: false,
+          defaultDate: "2019-02-01",
+		  aspectRatio: 1
+		 });
+		 
+		 $('#calendarMar').fullCalendar({
+		  header: {
+		 	left:   '',
+		 	center: 'title',
+		 	right:  ' '
+		  },
+		  googleCalendarApiKey: 'AIzaSyB-fudNpQpgXuARz-D67Mtlw2Vvz371axc',
+		  events: {
+			googleCalendarId: 'casaemaltura@gmail.com'
+		  },
+		  eventBackgroundColor: '#e52929',
+		  showNonCurrentDates: false,
+          defaultDate: "2019-03-01",
+		  aspectRatio: 1
+		 });
+		 
+		 $('#calendarAbr').fullCalendar({
+		  header: {
+		 	left:   '',
+		 	center: 'title',
+		 	right:  ' '
+		  },
+		  googleCalendarApiKey: 'AIzaSyB-fudNpQpgXuARz-D67Mtlw2Vvz371axc',
+		  events: {
+			googleCalendarId: 'casaemaltura@gmail.com'
+		  },
+		  eventBackgroundColor: '#e52929',
+		  showNonCurrentDates: false,
+          defaultDate: "2019-04-01",
+		  aspectRatio: 1
+		 });
+		 
+		  $('#calendarMai').fullCalendar({
+		  header: {
+		 	left:   '',
+		 	center: 'title',
+		 	right:  ' '
+		  },
+		  googleCalendarApiKey: 'AIzaSyB-fudNpQpgXuARz-D67Mtlw2Vvz371axc',
+		  events: {
+			googleCalendarId: 'casaemaltura@gmail.com'
+		  },
+		  eventBackgroundColor: '#e52929',
+		  showNonCurrentDates: false,
+          defaultDate: "2019-05-01",
+		  aspectRatio: 1
+		 });
+		 
+		  $('#calendarJun').fullCalendar({
+		  header: {
+		 	left:   '',
+		 	center: 'title',
+		 	right:  ' '
+		  },
+		  googleCalendarApiKey: 'AIzaSyB-fudNpQpgXuARz-D67Mtlw2Vvz371axc',
+		  events: {
+			googleCalendarId: 'casaemaltura@gmail.com'
+		  },
+		  eventBorderColor: '#e5dada',
+		  eventBackgroundColor: '#e52929',
+		  showNonCurrentDates: false,
+          defaultDate: "2019-06-01",
+		  aspectRatio: 1
+		 });
+		 
+		  $('#calendarJul').fullCalendar({
+		  header: {
+		 	left:   '',
+		 	center: 'title',
+		 	right:  ' '
+		  },
+		  googleCalendarApiKey: 'AIzaSyB-fudNpQpgXuARz-D67Mtlw2Vvz371axc',
+		  events: {
+			googleCalendarId: 'casaemaltura@gmail.com'
+		  },
+		  eventBackgroundColor: '#e52929',
+		  showNonCurrentDates: false,
+          defaultDate: "2019-07-02",
+		  aspectRatio: 1
+		 });
+		 
+		  $('#calendarAgo').fullCalendar({
+		  header: {
+		 	left:   '',
+		 	center: 'title',
+		 	right:  ' '
+		  },
+		  googleCalendarApiKey: 'AIzaSyB-fudNpQpgXuARz-D67Mtlw2Vvz371axc',
+		  events: {
+			googleCalendarId: 'casaemaltura@gmail.com'
+		  },
+		  eventBackgroundColor: '#e52929',
+		  showNonCurrentDates: false,
+          defaultDate: "2019-08-01",
+		  aspectRatio: 1
+		 });
+		 
+		  $('#calendarSet').fullCalendar({
+		  header: {
+		 	left:   '',
+		 	center: 'title',
+		 	right:  ' '
+		  },
+		  googleCalendarApiKey: 'AIzaSyB-fudNpQpgXuARz-D67Mtlw2Vvz371axc',
+		  events: {
+			googleCalendarId: 'casaemaltura@gmail.com'
+		  },
+		  eventBackgroundColor: '#e52929',
+		  showNonCurrentDates: false,
+          defaultDate: "2019-09-01",
+		  aspectRatio: 1
+		 });
+		 
+		  $('#calendarOut').fullCalendar({
+		  header: {
+		 	left:   '',
+		 	center: 'title',
+		 	right:  ' '
+		  },
+		  googleCalendarApiKey: 'AIzaSyB-fudNpQpgXuARz-D67Mtlw2Vvz371axc',
+		  events: {
+			googleCalendarId: 'casaemaltura@gmail.com'
+		  },
+		  eventBackgroundColor: '#e52929',
+		  showNonCurrentDates: false,
+          defaultDate: "2019-10-01",
+		  aspectRatio: 1
+		 });
+		 
+		  $('#calendarNov').fullCalendar({
+		  header: {
+		 	left:   '',
+		 	center: 'title',
+		 	right:  ' '
+		  },
+		  googleCalendarApiKey: 'AIzaSyB-fudNpQpgXuARz-D67Mtlw2Vvz371axc',
+		  events: {
+			googleCalendarId: 'casaemaltura@gmail.com'
+		  },
+		  eventBackgroundColor: '#e52929',
+		  showNonCurrentDates: false,
+          defaultDate: "2019-11-01",
+		  aspectRatio: 1
+		 });
+		 
+		 $('#calendarDez').fullCalendar({
+		  header: {
+		 	left:   '',
+		 	center: 'title',
+		 	right:  ' '
+		  },
+		  googleCalendarApiKey: 'AIzaSyB-fudNpQpgXuARz-D67Mtlw2Vvz371axc',
+		  events: {
+			googleCalendarId: 'casaemaltura@gmail.com'
+		  },
+		  eventBackgroundColor: '#e52929',
+		  showNonCurrentDates: false,
+          defaultDate: "2019-12-01",
+		  aspectRatio: 1
+		 });
+    </script>
+</html> 
