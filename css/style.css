@@ -73,7 +73,7 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-  background: url(../img/praia_1.png) no-repeat center center fixed; 
+  background: url(../img/praia_1.gif) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -104,7 +104,6 @@ body {
     vertical-align: middle !important;
     text-align: center !important;
 	color: #fff !important;
-	padding: 40px !important;
 }
 
 h1.header-text {
