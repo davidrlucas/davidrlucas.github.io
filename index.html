@@ -74,20 +74,6 @@
 					<div class="col-md-3">
 						<ul class="checklist">
 							<li class="major">
-								<span><i class="major fa fa-bath"></i> Casa de Banho</span>
-							</li>
-							<li class="">
-								<i class="glyphicon glyphicon-check"></i> WC
-							</li>
-							<li class="">
-								<i class="glyphicon glyphicon-check"></i> Duche
-							</li>
-							<li class="">
-								<i class="glyphicon glyphicon-check"></i> Produtos de higiene pessoal
-							</li>
-						</ul>
-						<ul class="checklist">
-							<li class="major">
 								<span><i class="major fa fa-home"></i> Comodidades</span>
 							</li>
 							<li class="">
@@ -95,6 +81,9 @@
 							</li>
 							<li class="">
 								<i class="glyphicon glyphicon-check"></i> Sofá cama
+							</li>
+							<li class="">
+								<i class="glyphicon glyphicon-check"></i> WC com Poliban
 							</li>
 							<li class="">
 								<i class="glyphicon glyphicon-check"></i> Cozinha totalmente equipada
@@ -187,24 +176,12 @@
              </div>
 			<div class="container-style">
 				<div class="row-style">
-					<div id="calendarJan" class="cal"></div>
-					<div id="calendarFev" class="cal"></div>
-					<div id="calendarMar" class="cal"></div>
-				</div>
-				<div class="row-style">
-					<div id="calendarAbr" class="cal"></div>
-					<div id="calendarMai" class="cal"></div>
 					<div id="calendarJun" class="cal"></div>
+					<div id="calendarJul" class="cal"></div>
 				</div>
 				<div class="row-style">
-					<div id="calendarJul" class="cal"></div>
 					<div id="calendarAgo" class="cal"></div>
 					<div id="calendarSet" class="cal"></div>
-				</div>
-				<div class="row-style">
-					<div id="calendarOut" class="cal"></div>
-					<div id="calendarNov" class="cal"></div>
-					<div id="calendarDez" class="cal"></div>
 				</div>
 			</div>
 		</div>
@@ -223,86 +200,6 @@
 		});
 		
 		 // Calendars
-		 $('#calendarJan').fullCalendar({
-		  header: {
-		 	left:   '',
-		 	center: 'title',
-		 	right:  ' '
-		  },
-		  googleCalendarApiKey: 'AIzaSyB-fudNpQpgXuARz-D67Mtlw2Vvz371axc',
-		  events: {
-			googleCalendarId: 'casaemaltura@gmail.com'
-		  },
-		  eventBackgroundColor: '#e52929',
-		  showNonCurrentDates: false,
-          defaultDate: "2019-01-01",
-		  aspectRatio: 1
-		 });
-		 
-		$('#calendarFev').fullCalendar({
-		  header: {
-		 	left:   '',
-		 	center: 'title',
-		 	right:  ' '
-		  },
-		  googleCalendarApiKey: 'AIzaSyB-fudNpQpgXuARz-D67Mtlw2Vvz371axc',
-		  events: {
-			googleCalendarId: 'casaemaltura@gmail.com'
-		  },
-		  eventBackgroundColor: '#e52929',
-		  showNonCurrentDates: false,
-          defaultDate: "2019-02-01",
-		  aspectRatio: 1
-		 });
-		 
-		 $('#calendarMar').fullCalendar({
-		  header: {
-		 	left:   '',
-		 	center: 'title',
-		 	right:  ' '
-		  },
-		  googleCalendarApiKey: 'AIzaSyB-fudNpQpgXuARz-D67Mtlw2Vvz371axc',
-		  events: {
-			googleCalendarId: 'casaemaltura@gmail.com'
-		  },
-		  eventBackgroundColor: '#e52929',
-		  showNonCurrentDates: false,
-          defaultDate: "2019-03-01",
-		  aspectRatio: 1
-		 });
-		 
-		 $('#calendarAbr').fullCalendar({
-		  header: {
-		 	left:   '',
-		 	center: 'title',
-		 	right:  ' '
-		  },
-		  googleCalendarApiKey: 'AIzaSyB-fudNpQpgXuARz-D67Mtlw2Vvz371axc',
-		  events: {
-			googleCalendarId: 'casaemaltura@gmail.com'
-		  },
-		  eventBackgroundColor: '#e52929',
-		  showNonCurrentDates: false,
-          defaultDate: "2019-04-01",
-		  aspectRatio: 1
-		 });
-		 
-		  $('#calendarMai').fullCalendar({
-		  header: {
-		 	left:   '',
-		 	center: 'title',
-		 	right:  ' '
-		  },
-		  googleCalendarApiKey: 'AIzaSyB-fudNpQpgXuARz-D67Mtlw2Vvz371axc',
-		  events: {
-			googleCalendarId: 'casaemaltura@gmail.com'
-		  },
-		  eventBackgroundColor: '#e52929',
-		  showNonCurrentDates: false,
-          defaultDate: "2019-05-01",
-		  aspectRatio: 1
-		 });
-		 
 		  $('#calendarJun').fullCalendar({
 		  header: {
 		 	left:   '',
@@ -365,54 +262,6 @@
 		  eventBackgroundColor: '#e52929',
 		  showNonCurrentDates: false,
           defaultDate: "2019-09-01",
-		  aspectRatio: 1
-		 });
-		 
-		  $('#calendarOut').fullCalendar({
-		  header: {
-		 	left:   '',
-		 	center: 'title',
-		 	right:  ' '
-		  },
-		  googleCalendarApiKey: 'AIzaSyB-fudNpQpgXuARz-D67Mtlw2Vvz371axc',
-		  events: {
-			googleCalendarId: 'casaemaltura@gmail.com'
-		  },
-		  eventBackgroundColor: '#e52929',
-		  showNonCurrentDates: false,
-          defaultDate: "2019-10-01",
-		  aspectRatio: 1
-		 });
-		 
-		  $('#calendarNov').fullCalendar({
-		  header: {
-		 	left:   '',
-		 	center: 'title',
-		 	right:  ' '
-		  },
-		  googleCalendarApiKey: 'AIzaSyB-fudNpQpgXuARz-D67Mtlw2Vvz371axc',
-		  events: {
-			googleCalendarId: 'casaemaltura@gmail.com'
-		  },
-		  eventBackgroundColor: '#e52929',
-		  showNonCurrentDates: false,
-          defaultDate: "2019-11-01",
-		  aspectRatio: 1
-		 });
-		 
-		 $('#calendarDez').fullCalendar({
-		  header: {
-		 	left:   '',
-		 	center: 'title',
-		 	right:  ' '
-		  },
-		  googleCalendarApiKey: 'AIzaSyB-fudNpQpgXuARz-D67Mtlw2Vvz371axc',
-		  events: {
-			googleCalendarId: 'casaemaltura@gmail.com'
-		  },
-		  eventBackgroundColor: '#e52929',
-		  showNonCurrentDates: false,
-          defaultDate: "2019-12-01",
 		  aspectRatio: 1
 		 });
     </script>
