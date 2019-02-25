@@ -4,7 +4,7 @@ body {
   width: 100%;
 }
 
-.container {
+.container-style {
 	margin-top: 50px;
 }
 
@@ -14,7 +14,7 @@ body {
 	padding: 10px;
 }
 
-.row {
+.row-style {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0 4px;
@@ -22,6 +22,11 @@ body {
     align-items: center;
 	
 	margin-top: 30px;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -56,7 +61,7 @@ body {
 	max-width: 50%;
   }
   .header {
-    background: url(../img/bg.jpg) no-repeat center center scroll; 
+    background: url(../img/praia_1.jpg) no-repeat center center scroll;
   }
 }
 
@@ -66,6 +71,10 @@ body {
 	flex: 100%;
 	max-width: 100%;
   }
+}
+
+.space{
+  margin-top: 70px;
 }
 
 .header {
@@ -97,19 +106,8 @@ body {
   text-shadow: 2px 2px rgba(156, 190, 200, 1);
 }
 
-.link-style {
-	text-decoration: none !important;
-	font-family: 'Lobster', cursive !important;
-	font-size: 2.5em !important;
-	text-shadow: 2px 2px rgba(156, 190, 200, 1) !important;
-	display: table-cell !important;
-    vertical-align: middle !important;
-    text-align: center !important;
-	color: #fff !important;
-}
-
 h1.header-text {
-  font-family: 'Lobster', cursive;
+  font-family: 'Pacifico', cursive;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
   margin-top: 140px;
   color: white;
@@ -140,3 +138,95 @@ em.header-text {
 .fc-basic-view .fc-body .fc-row {
     min-height: 1em !important;
 }
+
+#offer-inner {
+  display: table;
+  margin: 0 auto;
+}
+
+#offer h2{
+  color: #7fbbda !important;
+}
+
+#calendar h2{
+  color: #7fbbda !important;
+}
+
+.photos {
+  background: #ffffff;
+  padding: 50px 0;
+  width: 100%;
+  color: #7fbfbda;
+}
+
+.offer {
+  background: #ffffff;
+  padding: 50px 0;
+  width: 100%;
+  color: #7fbfbda;
+}
+
+.calendar {
+  background: #ffffff;
+  padding: 50px 0;
+  width: 100%;
+  color: #7fbfbda;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) { 
+	.photos {
+      background: #ffffff;
+      padding: 50px 0;
+      color: #7fbbda;
+    }
+	.offer {
+      background: #ffffff;
+	  padding: 50px 0;
+	  color: #7fbbda;
+    }
+	.calendar {
+      background: #ffffff;
+      padding: 50px 0;
+      color: #7fbbda;
+    }
+	
+}
+
+.divide50 {
+    width: 100%;
+    height: 50px;
+}
+
+.checklist {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  color: #7f8c8d;
+}
+
+.checklist li {
+  height: 28px;
+  font-size: 12px;
+  line-height: 60px;
+  margin-bottom: 13px;
+}
+
+.checklist li i {
+  font-size: 15px;
+  margin-right: 3px;
+  color: #7fbbda;
+  padding-left: 15px;
+}
+
+.check-list.inline li {
+    float: left;
+    width: 50%;
+}
+
+.major{
+  font-size: 18px !important;
+  color: #7f8c8d !important;
+  padding-left: 0px !important;
+  margin-top: 25px;
+}
+

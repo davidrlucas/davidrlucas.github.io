@@ -10,13 +10,14 @@
 	  
 	   <link href="css/style.css" rel="stylesheet">
        <link href="css/bootstrap.css" rel="stylesheet">
-	   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-       <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	   
 	   <script src='js/jquery.min.js'></script>
 	   <script src='js/moment.min.js'></script>
-	   
+	   <script src="js/jquery-1.10.2.js"></script>
+        
 	   <script src="js/bootstrap.js"></script>
        <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
 	   
@@ -30,59 +31,181 @@
 			<div class="vert-text parallax">
 				<h1 class="header-text">Casa em Altura</h1>
 				</br>
-				<div class="container">
-					<div class="row">
-						<a class="link-style" href="#photos">Fotos</a>
-						<a class="link-style" style="margin-left: 50px" href="#calendario">Disponibilidade</a>
+				<a href="#photos"><img id="direction-white" class="space" src="img/direction_white.png" alt="Direction"></a>
+			</div>
+		</div>
+		
+		<div id="photos" class="photos">
+			<div class="container-style">
+				<div class="row-style"> 
+					<div class="column">
+						<img class="own-img-thumbnail" src="photos/main_room_1.jpeg">
+						<img class="own-img-thumbnail" src="photos/main_room_2.jpeg">
+						<img class="own-img-thumbnail" src="photos/second_room_1.jpeg">
+						<img class="own-img-thumbnail" src="photos/backroom_1.jpeg">
+					</div>
+					<div class="column">
+						<img class="own-img-thumbnail "src="photos/living_room_1.jpeg">
+						<img class="own-img-thumbnail "src="photos/living_room_2.jpeg">
+						<img class="own-img-thumbnail "src="photos/kitchen_1.jpeg">
+						<img class="own-img-thumbnail "src="photos/backroom_2.jpeg">
+					</div> 
+					<div class="column">
+						<img class="own-img-thumbnail" src="photos/hallway_1.jpeg">
+						<img class="own-img-thumbnail" src="photos/bathroom_1.jpeg">
+						<img class="own-img-thumbnail" src="photos/bathroom_2.jpeg">
+						<img class="own-img-thumbnail" src="photos/outside_1.jpeg">
+						<img class="own-img-thumbnail" src="photos/beach_1.jpeg">
 					</div>
 				</div>
 			</div>
 		</div>
-	
-		<div class="container">
-			<div class="row" id="photos"> 
-				<div class="column">
-					<img class="own-img-thumbnail" src="photos/main_room_1.jpeg">
-					<img class="own-img-thumbnail" src="photos/main_room_2.jpeg">
-					<img class="own-img-thumbnail" src="photos/second_room_1.jpeg">
-					<img class="own-img-thumbnail" src="photos/backroom_1.jpeg">
-				</div>
-				<div class="column">
-					<img class="own-img-thumbnail "src="photos/living_room_1.jpeg">
-					<img class="own-img-thumbnail "src="photos/living_room_2.jpeg">
-					<img class="own-img-thumbnail "src="photos/kitchen_1.jpeg">
-					<img class="own-img-thumbnail "src="photos/backroom_2.jpeg">
-				</div> 
-				<div class="column">
-					<img class="own-img-thumbnail" src="photos/hallway_1.jpeg">
-					<img class="own-img-thumbnail" src="photos/bathroom_1.jpeg">
-					<img class="own-img-thumbnail" src="photos/bathroom_2.jpeg">
-					<img class="own-img-thumbnail" src="photos/outside_1.jpeg">
-					<img class="own-img-thumbnail" src="photos/beach_1.jpeg">
-				</div>
-			</div>
-		</div>
 		
-		<div class="container" id="calendario">
+		<div id="offer" class="offer">
+            <div id="offer-inner" class="container">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4 text-center">
+                        <h2 class="main-title">Ao seu dispor</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="divide50"></div>
+                <div class="row">
+					<div class="col-md-3">
+						<ul class="checklist">
+							<li class="major">
+								<span><i class="major fa fa-bath"></i> Casa de Banho</span>
+							</li>
+							<li class="">
+								<i class="glyphicon glyphicon-check"></i> WC
+							</li>
+							<li class="">
+								<i class="glyphicon glyphicon-check"></i> Duche
+							</li>
+							<li class="">
+								<i class="glyphicon glyphicon-check"></i> Produtos de higiene pessoal
+							</li>
+						</ul>
+						<ul class="checklist">
+							<li class="major">
+								<span><i class="major fa fa-home"></i> Comodidades</span>
+							</li>
+							<li class="">
+								<i class="glyphicon glyphicon-check"></i> 2 Quartos c/ cama casal
+							</li>
+							<li class="">
+								<i class="glyphicon glyphicon-check"></i> Sofá cama
+							</li>
+							<li class="">
+								<i class="glyphicon glyphicon-check"></i> Cozinha totalmente equipada
+							</li>
+							<li class="">
+								<i class="glyphicon glyphicon-check"></i> Microondas
+							</li>
+							<li class="">
+								<i class="glyphicon glyphicon-check"></i> Máquina de café
+							</li>
+							<li class="">
+								<i class="glyphicon glyphicon-check"></i> Máquina de lavar a roupa
+							</li>
+							<li class="">
+								<i class="glyphicon glyphicon-check"></i> Barbecue indoor
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="checklist">
+							<li class="major">
+								<span><i class="major fa fa-television"></i> Media e Tecnologia</span>
+							</li>
+							<li class="">
+								<i class="glyphicon glyphicon-check"></i> Televisão de ecrã plano
+							</li>
+						</ul>
+						<ul class="checklist">
+							<li class="major">
+								<span><i class="major fa fa-sun-o"></i> Vista/Exterior</span>
+							</li>
+							<li class="">
+								<i class="glyphicon glyphicon-check"></i> Terraço 
+							</li>
+								<li class="">
+								<i class="glyphicon glyphicon-check"></i> Vista panorâmica 
+							</li>
+						</ul>
+						<ul class="checklist">
+							<li class="major">
+								<span><i class="major fa fa-map"></i> Acessibilidade Turismo</span>
+							</li>
+							<li class="">
+								<i class="glyphicon glyphicon-check"></i> 5 minutos a pé até a praia 
+							</li>
+								<li class="">
+								<i class="glyphicon glyphicon-check"></i> 10 minutos a pé até à avenida principal 
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="checklist">
+							<li class="major">
+								<span><i class="major fa fa-paw"></i> Animais</span>
+							</li>
+							<li class="">
+								<i class="glyphicon glyphicon-check"></i> Permitidos animais de estimação
+							</li>
+						</ul>
+						<ul class="checklist">
+							<li class="major">
+								<span><i class="major fa fa-info-circle"></i> Geral</span>
+							</li>
+							<li class="">
+								<i class="glyphicon glyphicon-check"></i> Zona de fumadores
+							</li>
+						</ul>
+						<ul class="checklist">
+							<li class="major">
+								<span><i class="major fa fa-car"></i> Estacionamento</span>
+							</li>
+							<li class="">
+								<i class="glyphicon glyphicon-check"></i> Estacionamento acessível
+							</li>
+								<li class="">
+								<i class="glyphicon glyphicon-check"></i> Estacionamento de rua 
+							</li>
+						</ul>
+					</div>
+				</div>
+            </div>
+        </div>
+		
+		<div id="calendar" class="calendar">
 			<div class="row">
-				<div id="calendarJan" class="cal"></div>
-				<div id="calendarFev" class="cal"></div>
-				<div id="calendarMar" class="cal"></div>
-			</div>
-			<div class="row">
-				<div id="calendarAbr" class="cal"></div>
-				<div id="calendarMai" class="cal"></div>
-				<div id="calendarJun" class="cal"></div>
-			</div>
-			<div class="row">
-				<div id="calendarJul" class="cal"></div>
-				<div id="calendarAgo" class="cal"></div>
-				<div id="calendarSet" class="cal"></div>
-			</div>
-			<div class="row">
-				<div id="calendarOut" class="cal"></div>
-				<div id="calendarNov" class="cal"></div>
-				<div id="calendarDez" class="cal"></div>
+                 <div class="col-md-4 col-md-offset-4 text-center">
+                     <h2 class="main-title">Disponibilidade</h2>
+                     <hr>
+                 </div>
+             </div>
+			<div class="container-style">
+				<div class="row-style">
+					<div id="calendarJan" class="cal"></div>
+					<div id="calendarFev" class="cal"></div>
+					<div id="calendarMar" class="cal"></div>
+				</div>
+				<div class="row-style">
+					<div id="calendarAbr" class="cal"></div>
+					<div id="calendarMai" class="cal"></div>
+					<div id="calendarJun" class="cal"></div>
+				</div>
+				<div class="row-style">
+					<div id="calendarJul" class="cal"></div>
+					<div id="calendarAgo" class="cal"></div>
+					<div id="calendarSet" class="cal"></div>
+				</div>
+				<div class="row-style">
+					<div id="calendarOut" class="cal"></div>
+					<div id="calendarNov" class="cal"></div>
+					<div id="calendarDez" class="cal"></div>
+				</div>
 			</div>
 		</div>
    </body>
@@ -91,7 +214,7 @@
 		$(document).ready(function () {
 		 $(window).resize(function () {
 			 if ($(window).width() > 990) {
-				$("img").addClass("own-img-thumbnail");
+				$("img:not(#direction-white)").addClass("own-img-thumbnail");
 			 } else {
 				 $('.own-img-thumbnail').off('mouseenter.large mouseleave.large');
 				 $(".own-img-thumbnail").removeClass("own-img-thumbnail");
@@ -293,4 +416,21 @@
 		  aspectRatio: 1
 		 });
     </script>
+	 <script>
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+        </script>
 </html> 
